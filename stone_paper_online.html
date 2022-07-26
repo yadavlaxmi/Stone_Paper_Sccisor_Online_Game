@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var player_name=prompt("enter the player name")
+alert("hii"+""+""+ player_name)
+alert("choose any move from stone paper scissor")
+var player_choice=prompt("you choice your move please,\n'Select a choice\n 1.) stone\n 2.) scissor\n3.) paper\n ")
+var computers_choice=["stone","paper","scissors"]
+var computer_choice=computers_choice[Math.floor(Math.random()*computers_choice.length)]
+
+
+if (player_choice==computer_choice){
+  alert("draw")
+}
+else if (player_choice=="stone" && computer_choice=="scissor"){
+  alert(player_name +""+""+ "is winner!!")
+}
+else if (player_choice=="stone" && computer_choice=="paper"){
+  alert("computer_choice is winner!!")
+}
+else if (player_choice=="scissor" && computer_choice=="paper"){
+  alert(player_name+"" + ""+"is winner!!")
+}
+else if (player_choice=="scissor" && computer_choice=="stone"){
+  alert("computer_choice is winner!!")
+}
+else if (player_choice=="paper" && computer_choice=="stone"){
+  alert(player_name +""+""+ "is winner!!")
+}
+else if (player_choice="paper" && computer_choice=="scissor"){
+  alert("computer_choice is winner!!")
+}
+alert(computer_choice)
+</script>
+    
+</body>
+</html>
